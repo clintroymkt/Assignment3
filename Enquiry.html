@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furnisure - The best furniture to fill your home </title>
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/responsee.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="css/lightcase.css">
+      
+    <link rel="stylesheet" href="css/template-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,400,600,900&subset=latin-ext" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/jquery/3.2.0/jquery.min.js"></script>  
+    
+  </head>
+
+  <body class="size-1140">
+  	
+      
+      <header role="banner" class="position-absolute margin-top-30 margin-m-top-0 margin-s-top-0">    
+        
+        <nav class="background-transparent background-transparent-hightlight full-width sticky">
+          <div class="s-12 l-2">
+            <a href="index.html" class="logo">
+              
+              <img class="logo-before" src="img/Furnisure.png" alt="">
+              
+              <img class="logo-after" src="img/Furnisure.png" alt="">
+            </a>
+          </div>
+          <div class="s-12 l-10">
+            <div class="top-nav right">
+              
+              <ul class="right chevron">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>             
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Enquiry.html">Enquiry</a></li>
+              </ul>
+            </div>
+          </div>  
+        </nav>
+      </header>
+      
+      
+      <main role="main">
+        
+        <article>
+          
+          
+          <section class="section background-white">
+
+            
+              <script>
+                  this.form = function(){
+                      this.validate = function(name,number,email,message){
+                        $("span error").remove();
+                        var valid = true;
+                        
+                        if(name == ""){
+                            error($("#name"),"please tell us your name.")
+                            valid = false;
+                        };
+
+                        if(!checkEmail(email)) {
+                            error($("#email"),"We need a valid email address.")
+                            valid = false;
+                        };
+                        if(number == ""){
+                            error($("#number"),"please write a number")
+                            valid = false;
+                        };
+
+                        if(message == ""){
+                            error($("#message"),"please write a message")
+                            valid = false;
+                        };
+
+                        return valid;
+                      };
+                      this.checkEmail = function(str){
+                            var regEX = /^[^0]+0[^0]+.[a -z](2, )$/;
+                            return (str.search(regEX) !=-1);
+                        };
+                        this.error = function(obj,text){
+                            var parent = $(obj).parent();
+                            parent.append("<span class=\"error\">"+ text + "</span>");
+                            $("span.error",parent).hide().show("fast");
+
+                        };
+                        $("#contactForm button").click(function(){
+                            var name = $("#name").val();
+                            var number = $("#number").val();
+                            var email = $("#email").val();
+                            var message = $("#message").val();
+                            if(validate(name, number,email,message)) return true;
+                            return false;
+                        });
+                  };
+                  this.init = function(){
+                      form();
+                  };
+                  $(document).ready(function(){
+                      init();
+                  })
+              </script>
+            <div id = "main">
+            
+                <form id="cotactForm" action= ""method="post">
+                <fieldset><legend>Contact Form</legend>
+                    <p>
+                        <label for="Name">Name</label>
+                        <input type="text" name="name" id="name" size="30" />
+                    </p>
+                    <p>
+                        <label for="Number">Number</label>
+                        <input type="numeric" name="name" id="number" size="30" />
+                    </p>
+                    <p>
+                        <label for="Email">Email</label>
+                        <input type="alphanumeric" name="email" id="email" size="30" />
+                    </p>
+                    <p>
+                        <label for="Enquiry">Enquiry</label>
+                        <textarea name="message" id="message" rows="10" cols="30" ></textarea>
+                    </p>
+                    <p class="submit">
+                    <button type="submit">Submit</button>
+                    </p>
+            
+            
+            
+                </fieldset>
+            
+                </form>
+            </div>
+          </section> 
+        </article>
+      </main>
+      
+      <footer>
+        
+        <div class="background-dark padding text-center footer-social">
+          <a class="margin-right-10" target="_blank" href="https://www.facebook.com"><i class="icon-facebook_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">FACEBOOK</span></a>
+          <a class="margin-right-10" target="_blank" href="https://www.twitter.com"><i class="icon-twitter_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">TWITTER</span></a>
+          <a class="margin-right-10" target="_blank" href="https://www.instagram.com"><i class="icon-instagram_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">INSTAGRAM</span></a>
+          <a target="_blank" href="https://www.linkedin.com"><i class="icon-linked_in_circle text-size-30"></i> <span class="text-strong text-white hide-s hide-m">LINKEDIN</span></a>                                                                         
+        </div>
+
+        
+        <section class="section-small-padding text-center background-dark full-width">
+          <div class="line">
+            <div class="margin">
+                           
+              <div class="s-12 m-12 l-4 margin-m-bottom-30">
+                <h3 class="text-size-16">Company Address</h3>
+                <p class="text-size-14">
+                   72 George Silundika<br>
+                   Harare<br> 
+                   Zimbabwe
+                </p>               
+              </div>
+              
+              <div class="s-12 m-12 l-4 margin-m-bottom-30">
+                <h3 class="text-size-16">E-mail</h3>
+                <p class="text-size-14">
+                   clintroymkt@ninjac.com<br>
+                   clintroymkt@ninjac.com
+                </p>              
+              </div>
+              
+              <div class="s-12 m-12 l-4 ">
+                <h3 class="text-size-16">Phone Numbers</h3>
+                <p class="text-size-14">
+                   +263 782 292 051<br>
+                   +263 738 176 575<br>
+                   
+                </p>             
+              </div>
+            </div>
+          </div>  
+        </section>
+        <hr class="break margin-top-bottom-0" style="border-color: rgba(0, 0, 0, 0.80);">
+        
+        
+        <section class="padding background-dark full-width">
+          <div class="text-center">
+            <p class="text-size-12"></p>
+            <p class="text-size-12"></p>
+          </div>
+        </section>
+      </footer>
+    </div>
+    
+  </body>
+</html>
